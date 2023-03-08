@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config({path:__dirname+'/../.env'});
 const fs = require('fs')
 const ytdl = require('ytdl-core')
 const {Client, Intents, Message}=require('discord.js')
@@ -8,7 +8,7 @@ const intents = new Intents(32767)
 const client = new Client({intents : intents})
 const player = createAudioPlayer();
 
-client.login("Nzc4MjA1MjU5NTI0NDcyODcz.GKMgdk.G4kNNt3FZOtXBEeh6_EoTnNwpTdinTT6WLq1kY");
+client.login(process.env.TOKEN);
 
 client.on('ready',()=>{
     console.log(client.user.tag)
