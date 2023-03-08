@@ -1,0 +1,20 @@
+{
+  "name": "discord_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/voice": "^0.8.0",
+    "discord.js": "^13.12.0",
+    "dotenv": "^14.3.2",
+    "ffmpeg-static": "^4.4.1",
+    "google-search-results-nodejs": "^2.1.0",
+    "libsodium-wrappers": "^0.7.9",
+    "ytdl-core": "^4.11.0"
+  }
+}
